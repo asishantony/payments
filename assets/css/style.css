@@ -1,3 +1,11 @@
+:root{
+    --primary-color: #008170;
+    --secondary-color: #35A29F;
+    --dark-background: #0F0F0F;
+    --light-background: #add8e6;
+    --light: #d8dbe0;
+    --dark: #28292c;
+}
 /* Reset box-sizing to border-box */
 * {
     box-sizing: border-box;
@@ -56,7 +64,11 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #008170;
-    background-color: #0F0F0F;
+    background-color: var(--dark-background);
+}
+body.light-theme{
+    color: #0F0F0F;
+    background-color: var(--light-background);
 }
 main {
    padding: 30px;
@@ -88,7 +100,37 @@ main {
     padding: 5px 10px;
     border-radius: 10px;
 }
+.month-date{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.digit-amount{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #35A29F;
+}
 
 hr{
     border-top: 1px solid #646464;
 }
+
+.payee-details{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.description{
+    display:flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 12px;
+    }
+    body {
+      background-color: #add8e6;
+    }
+  }
