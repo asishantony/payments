@@ -1,0 +1,94 @@
+/* Reset box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+/* Remove margin and padding from all elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dd,
+dt,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set font-size and line-height to 1 for all elements */
+body {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+/* Remove list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove text-decoration from links */
+a {
+    text-decoration: none;
+}
+
+/* Remove outline from focused elements */
+:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #008170;
+    background-color: #0F0F0F;
+}
+main {
+   padding: 30px;
+}
+.card-dark{
+    background-color: #232D3F;
+    color: #ffffff;
+    padding: 20px 30px;
+}
+.card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.date-section{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 10px;
+}
+.digit-date{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.text-day{
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #646464;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+hr{
+    border-top: 1px solid #646464;
+}
