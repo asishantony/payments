@@ -1,14 +1,14 @@
-:root{
-    --primary-color: #008170;
-    --secondary-color: #35A29F;
-    --dark-background: #0F0F0F;
-    --light-background: #add8e6;
-    --light: #d8dbe0;
-    --dark: #28292c;
+:root {
+  --primary-color: #008170;
+  --secondary-color: #35a29f;
+  --dark-background: #0f0f0f;
+  --light-background: #add8e6;
+  --light: #d8dbe0;
+  --dark: #28292c;
 }
 /* Reset box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove margin and padding from all elements */
@@ -33,127 +33,159 @@ button,
 input,
 textarea,
 blockquote {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Set font-size and line-height to 1 for all elements */
 body {
-    font-size: 1rem;
-    line-height: 1;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 /* Remove list styles */
 ul,
 ol {
-    list-style: none;
+  list-style: none;
 }
 
 /* Remove text-decoration from links */
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Remove outline from focused elements */
 :focus {
-    outline: none;
+  outline: none;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #008170;
-    background-color: var(--dark-background);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #008170;
+  background-color: var(--dark-background);
 }
-body.light-theme{
-    color: #0F0F0F;
-    background-color: var(--light-background);
+body.light-theme {
+  color: #0f0f0f;
+  background-color: var(--light-background);
 }
 main {
-   padding: 30px;
+  padding: 30px;
 }
-.card-dark{
-    background-color: #232D3F;
-    color: #ffffff;
-    padding: 20px 30px;
+.main-head-link{
+  color: var(--primary-color);
 }
-.card-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.main-head-link:hover{
+  color: var(--primary-color);
+  cursor: pointer;
 }
-.date-section{
-    display: flex;
-    /* justify-content: space-around; */
-    align-items: center;
-    gap: 10px;
+.card-dark {
+  background-color: #232d3f;
+  color: #ffffff;
+  padding: 20px 30px;
 }
-.digit-date{
-    font-size: 2rem;
-    font-weight: 700;
+.card-dark:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
 }
-.text-day{
-    font-size: 1rem;
-    font-weight: 700;
-    background-color: #646464;
-    padding: 5px 10px;
-    border-radius: 10px;
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.month-date{
-    font-size: 1.2rem;
-    font-weight: 700;
+.date-section {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  gap: 10px;
 }
-.digit-amount{
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #35A29F;
+.digit-date {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.text-day {
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #646464;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.month-date {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.digit-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #35a29f;
 }
 
-hr{
-    border-top: 1px solid #646464;
+hr {
+  border-top: 1px solid #646464;
 }
 
-.payee-details{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-bottom: 1rem;
+.payee-details {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 1rem;
 }
-.description{
-    display:flex;
-    flex-direction: column;
-    font-size: 1rem;
+.description {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
 }
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#0C9;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-    transition: 0.2s;
-    z-index: 100;
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #0c9;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  transition: 0.2s;
+  z-index: 100;
 }
 .float:hover {
-    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    color: #ffffff;
-  }
-  .light-theme .float {
-    background-color: #232D3F;
-    color: #ffffff;
-  }
-.my-float{
-	margin-top:22px;
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  color: #ffffff;
+}
+.light-theme .float {
+  background-color: #232d3f;
+  color: #ffffff;
+}
+.my-float {
+  margin-top: 22px;
+}
+.card-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.card-content input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #646464;
+  margin-bottom: 1rem;
+}
+.form-content label{
+  color: #000;
+}
+.form-content .required label::after{
+  content: "*";
+  color: red;
 }
 
 @media only screen and (max-width: 600px) {
-    html{
-        font-size: 12px;
-    }
-   
+  html {
+    font-size: 12px;
   }
+}
