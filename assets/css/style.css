@@ -125,6 +125,31 @@ hr{
     flex-direction: column;
     font-size: 1rem;
 }
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+    transition: 0.2s;
+    z-index: 100;
+}
+.float:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    color: #ffffff;
+  }
+  .light-theme .float {
+    background-color: #232D3F;
+    color: #ffffff;
+  }
+.my-float{
+	margin-top:22px;
+}
 
 @media only screen and (max-width: 600px) {
     html{
